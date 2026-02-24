@@ -1,0 +1,34 @@
+HOW TO ADD YOUR LOGO TO THE WEBSITE
+=====================================
+
+STEP 1: Save the Logo Image
+----------------------------
+1. Look at the logo image in the chat (the one with black background showing "café Blou")
+2. Right-click on the image
+3. Select "Save Image As..."
+4. Navigate to: brewhaus-nextjs/public/
+5. Save it as: logo-dark.png
+
+STEP 2: Verify the Logo
+------------------------
+The logo should be saved at this exact path:
+brewhaus-nextjs/public/logo-dark.png
+
+STEP 3: Refresh Your Browser
+-----------------------------
+1. Go to http://localhost:3000
+2. Press Ctrl+F5 (or Cmd+Shift+R on Mac) to hard refresh
+3. You should now see your logo in:
+   - Top navigation bar (navbar)
+   - Footer at the bottom
+
+THAT'S IT!
+----------
+The code is already updated to use /logo-dark.png
+Just save the image file and refresh!
+
+If the logo doesn't appear:
+- Check the file is named exactly: logo-dark.png
+- Check it's in the public folder
+- Try clearing browser cache
+- Check browser console for errors (F12)

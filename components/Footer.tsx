@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
 
 export default function Footer() {
@@ -8,7 +9,17 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <h3 className="text-3xl font-heading mb-4">Café Blou</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="relative w-12 h-12">
+                <Image 
+                  src="/logo-dark.png" 
+                  alt="Café Blou Logo" 
+                  fill
+                  className="object-contain brightness-0 invert"
+                />
+              </div>
+              <h3 className="text-2xl font-heading">Café Blou</h3>
+            </div>
             <p className="text-white/80 text-sm">
               Café de cœur à Saint-Romuald. Un espace chaleureux où chaque moment compte.
             </p>

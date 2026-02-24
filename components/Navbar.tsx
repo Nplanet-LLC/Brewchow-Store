@@ -22,17 +22,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition group">
-            <div className="relative w-12 h-12 transform group-hover:scale-110 transition-transform">
+            <div className="relative w-16 h-16 transform group-hover:scale-110 transition-transform">
               <Image 
-                src="/cafe-blou-logo.svg" 
+                src="/logo-dark.png" 
                 alt="Café Blou Logo" 
                 fill
                 className="object-contain"
+                priority
               />
             </div>
-            <span className="text-2xl md:text-3xl font-heading text-[#2C4A3E] group-hover:text-[#7A9B8E] transition">
-              Café Blou
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
