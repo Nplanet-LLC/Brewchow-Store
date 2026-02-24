@@ -53,16 +53,22 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={18} className="flex-shrink-0 mt-1" />
                 <span className="text-white/80 text-sm">
-                  Saint-Romuald, QC<br />Canada
+                  2560 Chem. du Fleuve<br />
+                  Lévis, QC G6W 1X4<br />
+                  Canada
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} className="flex-shrink-0" />
-                <span className="text-white/80 text-sm">(418) XXX-XXXX</span>
+                <a href="tel:+14185551234" className="text-white/80 text-sm hover:text-white transition">
+                  (418) 555-1234
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={18} className="flex-shrink-0" />
-                <span className="text-white/80 text-sm">info@cafeblou.ca</span>
+                <a href="mailto:cafeblou@gmail.com" className="text-white/80 text-sm hover:text-white transition">
+                  cafeblou@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -78,14 +84,18 @@ export default function Footer() {
             <h4 className="text-lg font-heading mb-4">Suivez-Nous</h4>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/cafe_blou" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://www.facebook.com/people/Caf%C3%A9-Blou/61578633491745/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"
                 aria-label="Facebook"
               >

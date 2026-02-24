@@ -24,7 +24,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-heading text-[#2C4A3E] mb-2">Adresse</h3>
                   <p className="text-gray-700">
-                    Saint-Romuald, QC<br />
+                    2560 Chem. du Fleuve<br />
+                    Lévis, QC G6W 1X4<br />
                     Canada
                   </p>
                 </div>
@@ -50,7 +51,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-heading text-[#2C4A3E] mb-2">Téléphone</h3>
-                  <p className="text-gray-700">(418) XXX-XXXX</p>
+                  <a href="tel:+14185551234" className="text-gray-700 hover:text-[#2C4A3E] transition">
+                    (418) 555-1234
+                  </a>
                 </div>
               </div>
 
@@ -60,7 +63,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-heading text-[#2C4A3E] mb-2">Email</h3>
-                  <p className="text-gray-700">info@cafeblou.ca</p>
+                  <a href="mailto:cafeblou@gmail.com" className="text-gray-700 hover:text-[#2C4A3E] transition">
+                    cafeblou@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -71,7 +76,8 @@ export default function ContactPage() {
                 <div className="text-center">
                   <MapPin size={48} className="text-[#2C4A3E] mx-auto mb-4" />
                   <p className="text-gray-600">Carte Interactive</p>
-                  <p className="text-sm text-gray-500 mt-2">Saint-Romuald, QC</p>
+                  <p className="text-sm text-gray-500 mt-2">2560 Chem. du Fleuve</p>
+                  <p className="text-sm text-gray-500">Lévis, QC G6W 1X4</p>
                 </div>
               </div>
             </div>
@@ -82,10 +88,22 @@ export default function ContactPage() {
             <h2 className="text-3xl font-heading mb-4">Suivez-Nous</h2>
             <p className="mb-6">Restez connectés pour nos dernières nouvelles et offres spéciales</p>
             <div className="flex justify-center gap-6">
-              <a href="#" className="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition">
+              <a 
+                href="https://www.instagram.com/cafe_blou" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"
+                aria-label="Instagram"
+              >
                 <span className="text-2xl">📷</span>
               </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition">
+              <a 
+                href="https://www.facebook.com/people/Caf%C3%A9-Blou/61578633491745/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"
+                aria-label="Facebook"
+              >
                 <span className="text-2xl">📘</span>
               </a>
             </div>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#D4D19C"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#2C4A3E" text-anchor="middle">café</text>
+  <text x="400" y="700" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#2C4A3E" text-anchor="middle">Blou</text>
+  <path d="M200 400 Q400 350 600 400" stroke="#2C4A3E" stroke-width="8" fill="none"/>
+  <circle cx="250" cy="420" r="15" fill="#2C4A3E"/>
+  <circle cx="300" cy="410" r="10" fill="#2C4A3E"/>
+  <ellipse cx="400" cy="500" rx="80" ry="120" fill="none" stroke="#2C4A3E" stroke-width="6"/>
+  <path d="M350 480 L380 520 L350 560" stroke="#2C4A3E" stroke-width="4" fill="none"/>
+</svg>

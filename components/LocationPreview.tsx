@@ -11,7 +11,7 @@ export default function LocationPreview() {
               Venez Nous Voir
             </h2>
             <p className="text-xl text-gray-600">
-              Nous vous attendons à Saint-Romuald
+              Nous vous attendons à Lévis
             </p>
           </div>
 
@@ -22,7 +22,8 @@ export default function LocationPreview() {
                   <MapPin size={32} className="text-white" />
                 </div>
                 <h3 className="text-lg font-heading text-[#2C4A3E] mb-2">Adresse</h3>
-                <p className="text-gray-600">Saint-Romuald, QC</p>
+                <p className="text-gray-600">2560 Chem. du Fleuve</p>
+                <p className="text-gray-600">Lévis, QC G6W 1X4</p>
               </div>
 
               <div className="text-center">
@@ -39,7 +40,7 @@ export default function LocationPreview() {
                   <Phone size={32} className="text-white" />
                 </div>
                 <h3 className="text-lg font-heading text-[#2C4A3E] mb-2">Contact</h3>
-                <p className="text-gray-600">Appelez-nous</p>
+                <p className="text-gray-600">cafeblou@gmail.com</p>
               </div>
             </div>
 
