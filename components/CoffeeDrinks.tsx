@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import { Coffee, Droplet, Leaf, IceCream } from 'lucide-react'
+import Image from 'next/image'
 
 export default function CoffeeDrinks() {
   const drinks = [
-    { name: 'Latte', icon: Coffee, color: '#8B7355' },
-    { name: 'Cappuccino', icon: Coffee, color: '#2C4A3E' },
-    { name: 'Matcha', icon: Leaf, color: '#7A9B8E' },
-    { name: 'Smoothies', icon: IceCream, color: '#E8DCC8' }
+    { name: 'Café', image: '/images/category-coffee.avif' },
+    { name: 'Boissons', image: '/images/category-drinks.avif' },
+    { name: 'Pâtisseries', image: '/images/category-bakery.avif' },
+    { name: 'Spécialités', image: '/images/menu-coldbrew.avif' }
   ]
 
   return (
@@ -22,21 +22,23 @@ export default function CoffeeDrinks() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          {drinks.map((drink, index) => {
-            const Icon = drink.icon
-            return (
-              <div 
-                key={index}
-                className="bg-[#F5F1E8] rounded-3xl p-8 text-center hover:shadow-xl transition-all hover:scale-105 hover:-translate-y-2 cursor-pointer animate-scaleIn hover-lift"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white flex items-center justify-center animate-float" style={{ animationDelay: `${index * 0.2}s` }}>
-                  <Icon size={40} style={{ color: drink.color }} />
-                </div>
-                <h3 className="text-xl font-heading text-[#2C4A3E]">{drink.name}</h3>
+          {drinks.map((drink, index) => (
+            <div 
+              key={index}
+              className="group relative overflow-hidden rounded-3xl hover:shadow-2xl transition-all hover:scale-105 hover:-translate-y-2 cursor-pointer animate-scaleIn hover-lift h-64"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <Image 
+                src={drink.image}
+                alt={drink.name}
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#2C4A3E]/80 to-transparent flex items-end p-6">
+                <h3 className="text-2xl font-heading text-white">{drink.name}</h3>
               </div>
-            )
-          })}
+            </div>
+          ))}
         </div>
 
         <div className="text-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>

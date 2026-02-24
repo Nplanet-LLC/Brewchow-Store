@@ -55,7 +55,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center mb-12">
             <div className="relative w-64 h-80 transform md:rotate-3 hover:rotate-0 transition-all duration-500 animate-slideInLeft">
               <Image 
-                src="/cafeblou/images/coffee-1.avif" 
+                src="/images/hero-black-coffee.avif" 
                 alt="Artisan Coffee" 
                 fill
                 className="object-cover rounded-3xl shadow-xl hover:shadow-2xl transition-shadow"
@@ -63,7 +63,7 @@ export default function Hero() {
             </div>
             <div className="relative w-72 h-96 z-10 hover:scale-105 transition-all duration-500 animate-fadeIn" style={{ animationDelay: '0.3s' }}>
               <Image 
-                src="/cafeblou/images/coffee-2.avif" 
+                src="/images/hero-espresso.avif" 
                 alt="Fresh Espresso" 
                 fill
                 className="object-cover rounded-3xl shadow-2xl"
@@ -71,7 +71,7 @@ export default function Hero() {
             </div>
             <div className="relative w-64 h-80 transform md:-rotate-3 hover:rotate-0 transition-all duration-500 animate-slideInRight">
               <Image 
-                src="/cafeblou/images/coffee-3.avif" 
+                src="/images/hero-coldbrew.avif" 
                 alt="Cold Brew Perfection" 
                 fill
                 className="object-cover rounded-3xl shadow-xl hover:shadow-2xl transition-shadow"
