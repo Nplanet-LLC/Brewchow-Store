@@ -1,25 +1,17 @@
 import Hero from '@/components/Hero'
-import Ticker from '@/components/Ticker'
-import Categories from '@/components/Categories'
-import PopularMenu from '@/components/PopularMenu'
-import About from '@/components/About'
+import CoffeeDrinks from '@/components/CoffeeDrinks'
+import BrandAtmosphere from '@/components/BrandAtmosphere'
 import Testimonials from '@/components/Testimonials'
-import Locations from '@/components/Locations'
-import News from '@/components/News'
-import OrderBanner from '@/components/OrderBanner'
+import LocationPreview from '@/components/LocationPreview'
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Ticker />
-      <Categories />
-      <PopularMenu />
-      <About />
+      <CoffeeDrinks />
+      <BrandAtmosphere />
       <Testimonials />
-      <Locations />
-      <News />
-      <OrderBanner />
+      <LocationPreview />
     </main>
   )
 }

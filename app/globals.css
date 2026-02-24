@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --color-beige: #F5EFE6;
-  --color-green: #2D5F4C;
-  --color-brown: #8B6F47;
-  --color-cream: #FFF8F0;
+  --color-cream: #F5F1E8;
+  --color-dark-green: #2C4A3E;
+  --color-sage: #7A9B8E;
+  --color-beige: #E8DCC8;
+  --color-brown: #8B7355;
+  --color-white: #FFFFFF;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-family: var(--font-cabin), sans-serif;
+  background-color: var(--color-cream);
 }
 
 h1, h2, h3 {
   font-family: var(--font-calistoga), serif;
 }
-
 
 @keyframes scroll {
   0% {
@@ -29,4 +31,19 @@ h1, h2, h3 {
 
 .animate-scroll {
   animation: scroll 30s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
 }

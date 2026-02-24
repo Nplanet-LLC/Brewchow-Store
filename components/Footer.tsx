@@ -1,44 +1,105 @@
 import Link from 'next/link'
+import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D5F4C] text-white py-12">
+    <footer className="bg-[#2C4A3E] text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h3 className="text-2xl font-heading mb-4">☕ Brewhaus</h3>
-            <p className="text-sm">Great coffee, cozy vibes, friendly service.</p>
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
+          {/* Logo & Description */}
+          <div className="md:col-span-1">
+            <h3 className="text-3xl font-heading mb-4">Café Blou</h3>
+            <p className="text-white/80 text-sm">
+              Café de cœur à Saint-Romuald. Un espace chaleureux où chaque moment compte.
+            </p>
           </div>
-          
+
+          {/* Navigation */}
           <div>
-            <h4 className="font-heading mb-4">Menu</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/menu" className="hover:text-[#F5EFE6]">Coffee</Link></li>
-              <li><Link href="/menu" className="hover:text-[#F5EFE6]">Cold Drinks</Link></li>
-              <li><Link href="/menu" className="hover:text-[#F5EFE6]">Bakery</Link></li>
+            <h4 className="text-lg font-heading mb-4">Navigation</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/" className="text-white/80 hover:text-white transition">
+                  Accueil
+                </Link>
+              </li>
+              <li>
+                <Link href="/menu" className="text-white/80 hover:text-white transition">
+                  Menu
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-white/80 hover:text-white transition">
+                  À propos
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-white/80 hover:text-white transition">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/events" className="text-white/80 hover:text-white transition">
+                  Nos événements
+                </Link>
+              </li>
             </ul>
           </div>
-          
+
+          {/* Contact Info */}
           <div>
-            <h4 className="font-heading mb-4">Company</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about-us" className="hover:text-[#F5EFE6]">About Us</Link></li>
-              <li><Link href="/locations" className="hover:text-[#F5EFE6]">Locations</Link></li>
-              <li><Link href="/news" className="hover:text-[#F5EFE6]">News</Link></li>
+            <h4 className="text-lg font-heading mb-4">Contact</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2">
+                <MapPin size={18} className="flex-shrink-0 mt-1" />
+                <span className="text-white/80 text-sm">
+                  Saint-Romuald, QC<br />Canada
+                </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone size={18} className="flex-shrink-0" />
+                <span className="text-white/80 text-sm">(418) XXX-XXXX</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail size={18} className="flex-shrink-0" />
+                <span className="text-white/80 text-sm">info@cafeblou.ca</span>
+              </li>
             </ul>
           </div>
-          
+
+          {/* Hours & Social */}
           <div>
-            <h4 className="font-heading mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm">
-              <li>+1 (212) 555-0198</li>
-              <li>hello@bhaus.com</li>
+            <h4 className="text-lg font-heading mb-4">Heures d'Ouverture</h4>
+            <ul className="space-y-2 mb-6">
+              <li className="text-white/80 text-sm">Lun-Ven: 7h00 - 18h00</li>
+              <li className="text-white/80 text-sm">Sam-Dim: 8h00 - 17h00</li>
             </ul>
+            
+            <h4 className="text-lg font-heading mb-4">Suivez-Nous</h4>
+            <div className="flex gap-4">
+              <a 
+                href="#" 
+                className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
         </div>
-        
-        <div className="border-t border-white/20 pt-8 text-center text-sm">
-          <p>&copy; 2025 Brewhaus. All rights reserved.</p>
+
+        {/* Copyright */}
+        <div className="border-t border-white/20 pt-8 text-center">
+          <p className="text-white/60 text-sm">
+            © {new Date().getFullYear()} Café Blou. Tous droits réservés.
+          </p>
         </div>
       </div>
     </footer>

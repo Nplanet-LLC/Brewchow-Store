@@ -17,8 +17,8 @@ const cabinCondensed = Cabin_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: 'Brewhaus – Webflow HTML website template',
-  description: 'Enjoy handcrafted drinks, cozy cafés, and friendly baristas at Brewhaus. Visit our locations in New York for local flavor, good vibes, and fresh brews served daily.',
+  title: 'Café Blou – Café de cœur à Saint-Romuald',
+  description: 'Café Blou à Saint-Romuald. Un espace chaleureux où chaque moment compte. Savourez nos cafés artisanaux, lattes, cappuccinos et plus encore.',
   icons: {
     icon: '/favicon.png',
   },
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${calistoga.variable} ${cabinCondensed.variable}`}>
         <Navbar />
         {children}

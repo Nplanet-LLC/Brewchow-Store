@@ -1,84 +1,68 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[#F5EFE6] pt-32 pb-16 relative overflow-hidden">
-      {/* Background decorative element */}
+    <section className="min-h-screen bg-[#F5F1E8] pt-32 pb-20 relative overflow-hidden">
+      {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-10 w-96 h-96 bg-[#2D5F4C] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#8B6F47] rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-10 w-96 h-96 bg-[#2C4A3E] rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#7A9B8E] rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto">
-          {/* Main heading */}
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading text-[#2D5F4C] leading-tight mb-6">
-              Brewhaus
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Brand name */}
+          <div className="mb-8 animate-fadeIn">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading text-[#2C4A3E] mb-4">
+              Café Blou
             </h1>
-            <p className="text-2xl md:text-3xl text-[#8B6F47] font-light italic">
-              Café de cœur – Savoure l'instant
+            <p className="text-2xl md:text-3xl text-[#7A9B8E] font-light italic">
+              Café de cœur à Saint-Romuald
+            </p>
+            <p className="text-xl md:text-2xl text-[#8B7355] mt-2">
+              Savoure l'instant
             </p>
           </div>
 
-          {/* Story section - inspired by Café Blou */}
-          <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg mb-12">
-            <div className="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
-              <p className="text-center md:text-left">
-                Brewhaus isn't just a name – it's a feeling, a place where moments are savored and memories are brewed. 
-                From our earliest days, we've been inspired by the simple joy that a perfect cup of coffee can bring. 
-                We dreamed of creating a space where community gathers, where conversations flow as smoothly as our espresso, 
-                and where every visit feels like coming home.
+          {/* Story section */}
+          <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl mb-12 animate-fadeIn">
+            <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6">
+              <p className="text-lg md:text-xl">
+                Blou, ce n'est pas juste un surnom. C'était d'abord celui de notre cher papa, et avec le temps, 
+                il nous l'a transmis. Un nom qui, pour nous, incarne un lien profond et un attachement sincère à notre entourage.
               </p>
-              <p className="text-center md:text-left mt-6">
-                Today, that dream is alive in every cup we serve. Brewhaus is for family, for friends, for the beautiful 
-                moments we choose to share together. Welcome to our story. Welcome home.
+              <p className="text-lg md:text-xl">
+                Depuis notre tendre enfance, notre famille nous a encouragées à vivre avec passion. Nous avons puisé notre 
+                inspiration dans leur esprit d'entrepreneuriat, leur persévérance, et leur ouverture sur le monde.
               </p>
-            </div>
-          </div>
-
-          {/* Image gallery */}
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-center mb-12">
-            <div className="relative w-64 h-80 transform md:rotate-3 hover:rotate-0 transition-transform duration-300">
-              <Image 
-                src="/images/hero-black-coffee.avif" 
-                alt="Artisan Coffee" 
-                fill
-                className="object-cover rounded-3xl shadow-xl"
-              />
-            </div>
-            <div className="relative w-72 h-96 z-10 hover:scale-105 transition-transform duration-300">
-              <Image 
-                src="/images/hero-espresso.avif" 
-                alt="Fresh Espresso" 
-                fill
-                className="object-cover rounded-3xl shadow-2xl"
-              />
-            </div>
-            <div className="relative w-64 h-80 transform md:-rotate-3 hover:rotate-0 transition-transform duration-300">
-              <Image 
-                src="/images/hero-coldbrew.avif" 
-                alt="Cold Brew Perfection" 
-                fill
-                className="object-cover rounded-3xl shadow-xl"
-              />
+              <p className="text-lg md:text-xl">
+                Dans nos rêves les plus fous, nous imaginions travailler ensemble, créer notre petit cocon à nous et voilà, 
+                ce rêve n'était pas si fou après tout ! Deux filles, un bagage de vie extraordinaire, portées par un entourage 
+                motivant et bienveillant...
+              </p>
+              <p className="text-lg md:text-xl font-medium text-[#2C4A3E]">
+                Aujourd'hui, nous réalisons notre rêve. Blou, c'est pour la famille. Notre petite famille, mais immense de cœur. 
+                Et voilà, Café Blou est là, enfin. Pour vous, pour nous, pour les beaux moments qu'on choisit de partager avec vous.
+              </p>
+              <p className="text-right text-[#7A9B8E] italic mt-6">
+                -Mathilde et Viviann Blouin
+              </p>
             </div>
           </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center animate-fadeIn">
             <Link 
               href="/menu"
-              className="bg-[#2D5F4C] text-white px-10 py-4 rounded-full hover:bg-[#234739] transition-all hover:scale-105 shadow-lg text-lg"
+              className="bg-[#2C4A3E] text-white px-10 py-4 rounded-full hover:bg-[#1f3329] transition-all hover:scale-105 shadow-lg text-lg font-medium"
             >
-              Découvrir le Menu
+              Voir le Menu
             </Link>
             <Link 
-              href="/locations"
-              className="bg-white border-2 border-[#2D5F4C] text-[#2D5F4C] px-10 py-4 rounded-full hover:bg-[#2D5F4C] hover:text-white transition-all hover:scale-105 shadow-lg text-lg"
+              href="/contact"
+              className="bg-white border-2 border-[#2C4A3E] text-[#2C4A3E] px-10 py-4 rounded-full hover:bg-[#2C4A3E] hover:text-white transition-all hover:scale-105 shadow-lg text-lg font-medium"
             >
-              Nos Emplacements
+              Nous Rejoindre
             </Link>
           </div>
         </div>
